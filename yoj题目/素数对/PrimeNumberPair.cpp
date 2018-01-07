@@ -10,7 +10,7 @@ int main()
     int n;
     cin >> n;
 
-    if(n < 3){
+    if(n <= 4){
         cout << "empty";
         return 0;
     }
@@ -21,6 +21,8 @@ int main()
 
     for(int i = 5; i <= n; i++)
     {
+        if(i + 2 > n) break;
+
         if(isPrimeNumber(i) && isPrimeNumber(i + 2)){
             cout << endl << i << " " << i + 2;
         }
