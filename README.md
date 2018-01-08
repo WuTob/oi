@@ -5,3 +5,6 @@
 * [CAIOJ](http://www.caioj.cn)
 * [POJ](http://poj.org/)
 * [TOJ](http://acm.timus.ru/) //英文
+
+## blog
+* [吉丽](http://jiruyi910387714.is-programmer.com/)
