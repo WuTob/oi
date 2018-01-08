@@ -9,3 +9,4 @@
 
 ## blog
 * [吉丽](http://jiruyi910387714.is-programmer.com/)
+* [数据结构](http://blog.sina.cn/dpool/blog/u/2544107142#type=-1)
