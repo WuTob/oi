@@ -13,7 +13,7 @@ int main()
 
     for(int i = 0; i < 6; i++)
     {
-        cout << a[i];
+        cout << a[i] << " ";
     }
 }
 
@@ -32,7 +32,6 @@ void quickSort(int *a, int l, int r)
         if(lhs != rhs) swap(a[lhs], a[rhs]);
     }
 
-    swap(a[l], a[lhs]);
 
     quickSort(a, l, lhs - 1);
     quickSort(a, lhs + 1, r);
