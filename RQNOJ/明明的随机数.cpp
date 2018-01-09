@@ -31,8 +31,8 @@ void quickSort(int *a, int l, int r)
     }
 
     if(lhs != rhs)(swap(a[lhs], a[rhs]));
-    quickSort(l, lhs - 1);
-    quickSort(lhs + 1, r);
+    quickSort(a, l, lhs - 1);
+    quickSort(a, lhs + 1, r);
 }
 
 void swap(int &a, int &b)
