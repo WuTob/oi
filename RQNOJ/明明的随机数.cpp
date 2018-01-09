@@ -29,8 +29,10 @@ void quickSort(int *a, int l, int r)
         while(a[rhs] > stdNum && lhs < rhs) rhs--;
         while(a[lhs] < stdNum && lhs < rhs) lhs++;
 
-        if(lhs != rhs)(swap(a[lhs], a[rhs]));
+        if(lhs != rhs) swap(a[lhs], a[rhs]);
     }
+
+    swap(a[l], a[lhs]);
 
     quickSort(a, l, lhs - 1);
     quickSort(a, lhs + 1, r);
