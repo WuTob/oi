@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -7,14 +9,30 @@ void swap(int &a, int &b);
 
 int main()
 {
-    int a[] = {1, 52, 63, 12, 2, 3};
+    int n; cin >> n;
 
-    quickSort(a, 0, 5);
-
-    for(int i = 0; i < 6; i++)
+    int a[n] = {};
+    for(int i = 0; i < n; i++)
     {
-        cout << a[i] << " ";
+        cin >> a[i];
     }
+
+    quickSort(a, 0, n - 1);
+
+    strstream ss; string result; int lastNum = a[0], cnt = 1;
+    ss << a[0];
+    for(int i = 1; i < n; i++)
+    {
+        if(a[i] != lastNum)
+        {
+            cnt++;
+            ss << " " << a[i];
+        }
+    }
+
+    ss >> result;
+    cout << cnt << endl << result;
+
 }
 
 void quickSort(int *a, int l, int r)
