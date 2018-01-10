@@ -19,6 +19,8 @@ int main()
 
     quickSort(a, 0, n - 1);
 
+
+    //TODO: 使用scanf string to int
     strstream ss; string result; int lastNum = a[0], cnt = 1;
     ss << a[0];
     for(int i = 1; i < n; i++)
