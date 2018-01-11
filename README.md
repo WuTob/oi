@@ -6,6 +6,8 @@
 * [POJ](http://poj.org/)
 * [TOJ](http://acm.timus.ru/) //英文
 * [Universal OJ](http://uoj.ac/problems)
+* [洛谷] (https://www.luogu.org/)
+* [bzoj] (http://www.lydsy.com/JudgeOnline/)
 
 ## blog
 * [吉丽](http://jiruyi910387714.is-programmer.com/)
