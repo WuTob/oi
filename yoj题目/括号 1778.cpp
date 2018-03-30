@@ -31,9 +31,11 @@ int main()
 void isOK(string s)
 {
     stack<int> left;
-    static const char leftChar[4]  = {'(', '[', '<', '{'};
-    static const char rightChar[4] = {')', ']', '>', '}'};
+    static const char leftChar[4]  = {'<', '(', '[', '{'};
+    static const char rightChar[4] = {'>', ')', ']', '}'};
     bool flag = false;
+
+    int weight = -1;
 
     for(int i = 0; i < s.size(); i++)
     {
@@ -43,6 +45,7 @@ void isOK(string s)
         {
             if(s[i] == leftChar[n]){
                 left.push(n);
+                weight = n;
                 continueFlag = true;
             }
         }
@@ -51,7 +54,7 @@ void isOK(string s)
         for(int n = 0; n < 4; n++)
         {
             if(s[i] == rightChar[n]){
-                if(left.empty() || n != left.top()){
+                if(left.empty() || n != left.top() || n > weight){
                     ss.append("NO");
                     flag = true;
                 }
